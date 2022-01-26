@@ -19,8 +19,10 @@ Dataframe columns:
 - Normalized utterances for TF-IDF vectorization.<br>
 Some utterances vanished, some reduced to one simbol, I removed them since later they clustered with any utterance. 
 -  Reduced dimentionality of vectors to visualize the data <br>
-PCA-plot, umap plot (3d plot can be found...)
-- Clustered utterances <br>
+![pca img](https://github.com/minnegalieva/NN-for-dialog-annotation/blob/master/data/TF-IDF/DD_tfidf_pca_2d.png?raw=true)
+![umap img](https://github.com/minnegalieva/NN-for-dialog-annotation/blob/master/data/TF-IDF/DD_tfidf_umap.png?raw=true)
+There is also a 3D view https://github.com/minnegalieva/NN-for-dialog-annotation/blob/master/data/TF-IDF/DD_tfidf_pca_3d.html?raw=true)
+- Clustered utterances by kNN algorithm. Below you can find example of 15 neighbours <br>
 
 |Example TF-IDF neighbours|
 |---|
@@ -41,6 +43,12 @@ PCA-plot, umap plot (3d plot can be found...)
 |What's bothering that guy ? |
 
 This cluster as others for TF-IDF vectorization base mostly on a single word, in the above case to the "bother". Better to switch to context based vectorizations.
+- Performed K-Means clustering, k= 12, on vectorized utterances after dimentionality reduction by PCA <br>
+Clusterization of original TF-IDF vectorized uttearnces was computationally heavy.
+![elb img](https://github.com/minnegalieva/NN-for-dialog-annotation/blob/master/data/TF-IDF/tfidf_pca_kmeans_elbow.png?raw=true)
+
+Clusters end up to be big and not meaningful. The complete table can be found  here https://github.com/minnegalieva/NN-for-dialog-annotation/blob/master/data/TF-IDF/tfidf_k12_means_clust.xlsx
+
 
 # Week 2
 TODO:
