@@ -60,8 +60,9 @@ UMAP shows several big clusters.<br>
 ![umap img](https://github.com/minnegalieva/NN-for-dialog-annotation/blob/master/data/BERT/bert_nr_umap.png?raw=true)
 ![tsne img](https://github.com/minnegalieva/NN-for-dialog-annotation/blob/master/data/BERT/bert_nr_tsne.png?raw=true)
 On PCA plot two big clouds are distinguishable 
-That poses a question about optimal number of clusters, how big clusters we want? Bigger a cluster more diverse it is inside.
--Clustered vectorized data using kNN algorithm 
+That poses a question about optimal number of clusters, how big clusters we want? Bigger a cluster more diverse it is inside. I fixed number of clusters to 12 for k-Means algorithm.
+
+- Clustered vectorized data using kNN algorithm 
 
 |Example BERT neighbours|
 |---|
@@ -80,3 +81,14 @@ That poses a question about optimal number of clusters, how big clusters we want
 | Is that how you feel on the bus ? |
 | Don't you feel dizzy when you have to get up ? |
 | How late do you try to go to sleep ? |
+
+Sentances in above list look connected through topics:  feelings (bother, dull, stress, excited, dizzy, sleep), eating (chew, lips, eat), sleeping (maybe connected with feeling).
+
+- Clustered with k-Means algoritm
+
+![elb bert](https://github.com/minnegalieva/NN-for-dialog-annotation/blob/master/data/BERT/bert_pca_kmeans_elbow.png?raw=true)
+![umap labeled](https://github.com/minnegalieva/NN-for-dialog-annotation/blob/master/data/BERT/km_clust_on_umap.png)
+
+As it was with previous vectorization 12 clusters are very big, sentances inside are diverse.
+
+
