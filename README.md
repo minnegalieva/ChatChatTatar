@@ -55,8 +55,12 @@ TODO:
 - Perform BERT embedding
 Done:
 - Encoded data.
-- *Insert pics of dimentionality reduced data.* It is hard to tell what is the reasonable amout of clusters we can set. 3D plot of PCA shows two big clusters, 
-UMAP shows several big clusters.
+- Visualized high-dimentional data. <br>
+UMAP shows several big clusters.<br>
+![umap img](https://github.com/minnegalieva/NN-for-dialog-annotation/blob/master/data/BERT/bert_nr_umap.png?raw=true)
+![tsne img](https://github.com/minnegalieva/NN-for-dialog-annotation/blob/master/data/BERT/bert_nr_tsne.png?raw=true)
+On PCA plot two big clouds are distinguishable 
+That poses a question about optimal number of clusters, how big clusters we want? Bigger a cluster more diverse it is inside.
 -Clustered vectorized data using kNN algorithm 
 
 |Example BERT neighbours|
