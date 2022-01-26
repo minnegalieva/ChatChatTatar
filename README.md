@@ -54,17 +54,17 @@ UMAP shows several big clusters.
 |Example BERT neighbours|
 |---|
 | Does it bother you when you have to chew a lot ? |
-| My wallet and my cell phone . |
-| I think that I would enjoy the position but there isn't a lot of creativity involved . |
-| Usually we have a month off . |
-| how old is he today ? |
-|Good morning . Vane Theater , at your service . |
-| Sure . This is the one I will not hesitate to recommend . Its color and style is so attractive and also the quality is really reliable . |
-| Would you like to withdraw any money ? |
-| I'm off today . |
-| There must be about 50 computers in here . |
-| Well , considering your qualifications , we believe you would be a suitable candidate . |
-| Oh , I'm afraid it's too expensive . Can you show me something cheaper ? |
-| I have to be there before 1700 . |
-|I didn't see you at Mr . Johnson's class today . |
-| I'm sure the security is very tight.Probably they will make us walk through metal detectors like at the airport . |
+| Does it bother you when you eat something really sweet ? |
+| Do you have a lot on your mind when you try to go to sleep ? |
+| what do you use to eat it ? |
+| Don't you feel dull ? |
+| What do you do to deal with the stress ? |
+|What stresses you out the most ? |
+| Is there some reason why you can ’ t get enough sleep ? |
+| How do you protect yourself from chapped lips ? |
+| What do you normally eat ? |
+| What things make you excited ? |
+| Is this the only kind you have ? |
+| Is that how you feel on the bus ? |
+| Don't you feel dizzy when you have to get up ? |
+| How late do you try to go to sleep ? |
