@@ -91,4 +91,52 @@ Sentances in above list look connected through topics:  feelings (bother, dull, 
 
 As it was with previous vectorization 12 clusters are very big, sentances inside are diverse.
 
+# Week 3
+TODO:
+- Perform embedding with DialoDPT
+WIP:
+- Reducing dimentionality of utterance vectors
+- Cluster reduced embeddig <br>
+For this embedding computations are slow
+Done:
+- Clustered vectorized data using kNN algorithm 
+Examples of clusters:
 
+|#1 Example DialoGPT neighbours|
+|---|
+| does it bother you when you have to chew a lot ? | 
+| does it happen often ? |
+| does it come with a frame ? |
+| does your present employer know you are looking for another job ? |
+| does he even know how to speak english ? |
+| does that mean the stronger the better ? |
+| does it have enough lodging ? |
+| does that include the service charge ? |
+| does the hotel run its own laundry service ? |
+| does it include bonuses ? |
+| does 7 o'clock suit you ? |
+| does this fashion really fit my figure ? |
+| does it include the charge for drinks ? |
+| does it bite or scratch ? |
+| does the rent include utilities ? |
+| does he do that with his dad ? i mean , does he complain things to his father ? |
+
+|#2 Example DialoGPT neighbours|
+|---|
+| here you go , thanks for everything . |
+| here is your boarding pass . have a nice day . |
+| here is my card . can i have them delivered to this address ? |
+| here is your table , and now may i take your drink order while you are considering what to have for dinner ? |
+| here is your laundry ticket , sir . |
+| here is your receipt.thank you . |
+| here is a shop in the hotel . it's on the 11th floor . |
+| here , sir . sit down in this wheel chair . |
+| here's eight dollars . keep the change . |
+| here is a guiding plan . |
+| here's a check for ten dollars . |
+| here is my name card . thanks . |
+| here you go . i made up the burger patties for you . |
+| here it is . it ’ s really hard to find a shopping cart at this moment . |
+| here is 40 dollars.keep the change , please . |
+
+As we can see the beggining of sentances are similar, but meaning is diffrent. I guess that is because to encode a word GPT looks to previous words but not proceeding ones.
