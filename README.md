@@ -21,7 +21,9 @@ Some utterances vanished, some reduced to one simbol, I removed them since later
 -  Reduced dimentionality of vectors to visualize the data <br>
 ![pca img](https://github.com/minnegalieva/NN-for-dialog-annotation/blob/master/data/TF-IDF/DD_tfidf_pca_2d.png?raw=true)
 ![umap img](https://github.com/minnegalieva/NN-for-dialog-annotation/blob/master/data/TF-IDF/DD_tfidf_umap.png?raw=true)
+
 There is also a 3D view https://github.com/minnegalieva/NN-for-dialog-annotation/blob/master/data/TF-IDF/DD_tfidf_pca_3d.html?raw=true)
+
 - Clustered utterances by kNN algorithm. Below you can find example of 15 neighbours <br>
 
 |Example TF-IDF neighbours|
@@ -42,7 +44,7 @@ There is also a 3D view https://github.com/minnegalieva/NN-for-dialog-annotation
 | No , don't bother . I think I'm OK . |
 |What's bothering that guy ? |
 
-This cluster as others for TF-IDF vectorization base mostly on a single word, in the above case to the "bother". Better to switch to context based vectorizations.
+This cluster, like others for TF-IDF vectorization, is based mainly on a single word, in the above case on the "bother" word. Better to switch to context-based vectorizations.
 - Performed K-Means clustering, k= 12, on vectorized utterances after dimentionality reduction by PCA <br>
 Clusterization of original TF-IDF vectorized uttearnces was computationally heavy.
 ![elb img](https://github.com/minnegalieva/NN-for-dialog-annotation/blob/master/data/TF-IDF/tfidf_pca_kmeans_elbow.png?raw=true)
@@ -82,7 +84,7 @@ That poses a question about optimal number of clusters, how big clusters we want
 | Don't you feel dizzy when you have to get up ? |
 | How late do you try to go to sleep ? |
 
-Sentances in above list look connected through topics:  feelings (bother, dull, stress, excited, dizzy, sleep), eating (chew, lips, eat), sleeping (maybe connected with feeling).
+Sentances in the above list look connected through topics:  feelings (bother, dull, stress, excited, dizzy, sleep), eating (chew, lips, eat), sleeping (maybe connected with feeling).
 
 - Clustered with k-Means algoritm
 
@@ -139,4 +141,6 @@ Examples of clusters:
 | here it is . it ’ s really hard to find a shopping cart at this moment . |
 | here is 40 dollars.keep the change , please . |
 
-As we can see the beggining of sentances are similar, but meaning is diffrent. I guess that is because to encode a word GPT looks to previous words but not proceeding ones.
+As we can see begginings of sentances are similar, but meanings are different. I guess that is because to encode a word GPT looks to previous words but not proceeding ones.
+
+To conclude, BERT embedding should be used for unsupervised clustering since it connects sentences by meanings. Other embeddings are not worth the computing power spent on them, there are methods to group sentences by a word or by the beginning of a sentence that are faster. Further work may look for a broader context so that utterances cluster based not only on words in that utterance but also in neighboring utterances. 
